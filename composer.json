@@ -1,5 +1,5 @@
 {
-  "name": "yarcode/yii2-mailgun-mailer",
+  "name": "inquid/yii2-mailgun-mailer",
   "description": "Mailgun mailer implementation for Yii2",
   "type": "yii2-extension",
   "keywords": [
@@ -24,7 +24,7 @@
     "source": "https://github.com/yarcode/yii2-mailgun-mailer"
   },
   "require": {
-    "yiisoft/yii2": "~2",
+    "yiisoft/yii2": "3.5.0",
     "mailgun/mailgun-php": "^2"
   },
   "require-dev": {
