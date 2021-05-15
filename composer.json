@@ -24,7 +24,7 @@
     "source": "https://github.com/yarcode/yii2-mailgun-mailer"
   },
   "require": {
-    "yiisoft/yii2": "3.5.0",
+    "yiisoft/yii2": "^2.0",
     "mailgun/mailgun-php": "^2"
   },
   "require-dev": {
