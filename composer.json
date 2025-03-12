@@ -1,5 +1,5 @@
 {
-  "name": "inquid/yii2-mailgun-mailer",
+  "name": "egorshubin/yii2-mailgun-mailer",
   "description": "Mailgun mailer implementation for Yii2",
   "type": "yii2-extension",
   "keywords": [
