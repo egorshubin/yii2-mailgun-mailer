@@ -5,7 +5,7 @@
 
 namespace YarCode\Yii2\Mailgun;
 
-use Mailgun\Messages\MessageBuilder;
+use Mailgun\Message\MessageBuilder;
 use yii\helpers\ArrayHelper;
 use yii\mail\BaseMessage;
 
