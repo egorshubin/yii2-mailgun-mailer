@@ -7,6 +7,7 @@ namespace YarCode\Yii2\Mailgun;
 use Mailgun\Mailgun;
 use yii\base\InvalidConfigException;
 use yii\mail\BaseMailer;
+use Mailgun\HttpClient\HttpClientConfigurator;
 
 class Mailer extends BaseMailer
 {
@@ -28,7 +29,12 @@ class Mailer extends BaseMailer
         if (!isset($this->apiKey, $this->domain)) {
             throw new InvalidConfigException('Invalid mailer configuration');
         }
-        $this->client = \Yii::createObject(Mailgun::class, [$this->apiKey]);
+        
+        // Correct way to configure Mailgun
+        $configurator = new HttpClientConfigurator();
+        $configurator->setApiKey($this->apiKey);
+
+        $this->client = new Mailgun($configurator);
     }
 
     /**
